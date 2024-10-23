@@ -18,7 +18,8 @@ async function Temperatura(){
  
  paragrafo2.innerHTML = `
  Dia  
- <span> ${data} </span>
+ <!-- <span> ${data} </span> -->
+ <span> ${data.toLocaleString('pt-BR', { timezone: 'UTC' })} </span>
  Temperatura  
  <span> ${temperatura} </span>  <span> ${celsios} </span>  
  
