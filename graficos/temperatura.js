@@ -6,7 +6,10 @@ async function Temperatura(){
     const dados2 = await res2.json()
     console.log(dados2);
 
-    const data = (dados2.current.time)
+    //const data = (dados2.current.time)
+
+    const data = new Date(dados2.current.time(2023, 09, 20, 10, 11, 08));
+    
     const temperatura = (dados2.current.temperature_2m)
     const celsios = (dados2.hourly_units.temperature_2m)
 
